@@ -19,7 +19,7 @@ const PartnerLogo = ({
 }: PartnersLogosButton) => (
   <Card>
     <CardActionArea sx={{ height: 100 }} title={alt} onClick={onClick}>
-      <CardContent sx={{display: 'flex', maxHeight: 96, justifyContent: 'center', alignItems: 'center', padding: theme.spacing(2)}}>
+      <CardContent sx={{display: 'flex', maxHeight: 48, justifyContent: 'center', alignItems: 'center', padding: theme.spacing(2)}}>
         <img src={image} alt={alt} title={alt} style={{maxHeight: 100}} />
       </CardContent>
     </CardActionArea>

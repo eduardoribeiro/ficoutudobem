@@ -8,7 +8,7 @@ import Seo from "../components/seo"
 import { partners } from "../content/partners"
 import Partners from "../components/Homepage/Partners"
 import theme from "../theme"
-import { Box, Typography } from "@mui/material"
+import { Box, Grid, Typography } from "@mui/material"
 
 type DataProps = {
   site: {
@@ -17,7 +17,9 @@ type DataProps = {
 }
 
 const Homepage: React.FC<PageProps<DataProps>> = ({ data, location }) => (
-  <Layout noHeader>
+  <Layout
+    noHeader
+  >
     <Box
       sx={{
         display: "flex",
@@ -41,7 +43,6 @@ const Homepage: React.FC<PageProps<DataProps>> = ({ data, location }) => (
         Site Oficial
       </Typography>
     </Box>
-    <Partners partnersData={partners} />
   </Layout>
 )
 

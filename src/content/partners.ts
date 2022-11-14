@@ -8,29 +8,18 @@ export interface PartnersLogos {
 
 export const partners: PartnersLogos[] = [
     {
-        "image": "./images/parceiros/mop.png",
-        "alt": "MOP",
-        "link": "https://www.mop.pt"
+        "image": "./images/parceiros/cenouratravel.png",
+        "alt": "Cenoura Travel",
+        "link": "#"
     },
     {
-        "image": "./images/parceiros/mesa_da_rita.png",
-        "alt": "A Mesa da Rita ",
-        "link": "https://www.facebook.com/amesadarita"
+        "image": "./images/parceiros/casa-risa.png",
+        "alt": "Casa Risa",
+        "link": "https://www.casarisa.com/"
     },
     {
-        "image": "./images/parceiros/tpa.png",
-        "alt": "TPA Advogados",
-        "link": "https://www.tpalaw.pt/pt/",
+        "image": "./images/parceiros/makisushi.png",
+        "alt": "MakiSushi",
+        "link": "https://www.makisushi.pt/",
     },
-    {
-        "image": "./images/parceiros/personliart.png",
-        "alt": "PersonalizArt",
-        "link": "https://www.personalizart.pt/",
-    },
-    {
-        "image": "./images/parceiros/ruivalente.png",
-        "alt": "Rui Valente",
-        "link": "https://www.ruivalente.pt/",
-    },
-
 ]

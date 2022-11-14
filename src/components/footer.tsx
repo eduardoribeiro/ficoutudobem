@@ -1,33 +1,23 @@
+import { Grid } from "@mui/material"
 import React from "react"
+import { partners } from "../content/partners"
+import Partners from "./Homepage/Partners"
 
 const Footer: React.FC<any> = ({ children }) => (
-  <footer
-    style={{
-      marginTop: `var(--space-5)`,
-      fontSize: `var(--font-sm)`,
-    }}
-  >
+  <footer>
     {children ? (
       children
     ) : (
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          alignContent: "center",
-        }}
-      >
-        © {new Date().getFullYear()} &middot;
-        {` `}
-        <a href="https://www.premios-aquila.pt">
-          <img
-            src="./images/parceiros/fenix.png"
-            height={64}
-            alt="Fénix - Associação Cinematográfica"
-            title="Fénix - Associação Cinematográfica"
-          />
-        </a>
-      </div>
+      <Grid container xs={12} sx={{justifyContent: 'space-between', alignItems: 'flex-end'}}>
+        <Grid item>
+          © {new Date().getFullYear()} &middot;
+          {` `}
+          Byron Produções
+        </Grid>
+        <Grid item>
+          <Partners partnersData={partners} />
+        </Grid>
+      </Grid>
     )}
   </footer>
 )
