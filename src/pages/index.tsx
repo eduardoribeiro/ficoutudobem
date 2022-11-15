@@ -4,11 +4,10 @@ import { PageProps, Link, graphql, HeadFC } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
-import { partners } from "../content/partners"
-import Partners from "../components/Homepage/Partners"
+import Seo from "../components/seo";
+import CanalQ from '../images/logo-q.svg';
 import theme from "../theme"
-import { Box, Grid, Typography } from "@mui/material"
+import { Box, Typography } from "@mui/material"
 
 type DataProps = {
   site: {
@@ -36,12 +35,15 @@ const Homepage: React.FC<PageProps<DataProps>> = ({ data, location }) => (
         alt=""
         style={{ margin: "0 auto", marginBottom: theme.spacing(2) }}
       />
-      <Typography
+      <Box sx={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+        <Typography
         variant="h4"
-        sx={{ textAlign: "center", margin: theme.spacing(2, 0) }}
+        sx={{ textAlign: "center", margin: theme.spacing(2, 1), display: 'inline-block' }}
       >
-        Site Oficial
-      </Typography>
+        Brevemente no 
+        </Typography>
+        <CanalQ width={148} height='auto' style={{marginTop: -2, marginLeft: 10}} />
+      </Box>
     </Box>
   </Layout>
 )
