@@ -27,7 +27,7 @@ const Homepage: React.FC<PageProps<DataProps>> = ({ data, location }) => (
       }}
     >
       <StaticImage
-        src="../images/example.png"
+        src="../images/ficou_tudo_bem.png"
         loading="eager"
         width={400}
         quality={100}
