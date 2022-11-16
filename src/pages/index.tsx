@@ -23,13 +23,13 @@ const Homepage: React.FC<PageProps<DataProps>> = ({ data, location }) => (
       sx={{
         display: "flex",
         flexDirection: "column",
-        marginTop: theme.spacing(2),
+        marginTop: theme.spacing(16),
       }}
     >
       <StaticImage
-        src="../images/ficou_tudo_bem.png"
+        src="../images/ficou_tudo_bem_bigger.png"
         loading="eager"
-        width={400}
+        width={800}
         quality={100}
         formats={["auto", "webp", "avif"]}
         alt=""
@@ -40,7 +40,7 @@ const Homepage: React.FC<PageProps<DataProps>> = ({ data, location }) => (
         variant="h4"
         sx={{ textAlign: "center", margin: theme.spacing(2, 1), display: 'inline-block' }}
       >
-        Brevemente no 
+        Estreia em Dezembro no  
         </Typography>
         <CanalQ width={148} height='auto' style={{marginTop: -2, marginLeft: 10}} />
       </Box>

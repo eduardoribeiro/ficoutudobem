@@ -38,12 +38,14 @@ const Layout: React.FC<LayoutProps> = ({ noHeader = false, header, noFooter = fa
       {header ? header : !noHeader && <Header siteTitle={data.site.siteMetadata?.title || `Title`} />}
       <div
         style={{
+          position: 'relative',
           margin: `0 auto`,
           maxWidth: `var(--size-content)`,
           padding: `var(--size-gutter)`,
+          height: '100%'
         }}
       >
-        <main style={{minHeight: '80vh'}}>{children}</main>
+        <main>{children}</main>
         {footer ? footer : !noFooter && <Footer />}
       </div>
     </TopLayout>

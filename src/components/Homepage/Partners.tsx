@@ -11,26 +11,34 @@ export interface PartnersProps {
 
 const Partners = ({ partnersData }: PartnersProps) => {
   const handleOnClick = (link: string | undefined) => {
-    console.log(link);
-    window.open(link);
-  };
+    console.log(link)
+    window.open(link)
+  }
   return (
-  <Box sx={{position: 'relative'}}>
-    <Typography variant="h6" sx={{ transform: 'rotate(-90deg)', position: 'absolute', left: -80, bottom: 38, display: 'inline-block' }}>
-      PARCEIROS
-    </Typography>
-    {/* <Grid container spacing={2} sx={{ padding: theme.spacing(2, 0) }}> */}
-    <Stack direction={{ xs: 'row' }} spacing={2}>
-      {partnersData.map(partner => (
-        <PartnerLogo
-          key={partner.image}
-          image={partner.image}
-          alt={partner.alt}
-          onClick={() => handleOnClick(partner.link)}
-        />
-      ))}
-    </Stack>
-  </Box>
-)}
+    <Box sx={{ position: "relative" }}>
+      <Typography
+        variant="h6"
+        sx={{
+          position: "absolute",
+          top: '-2rem',
+          display: "inline-block",
+        }}
+      >
+        PATROCINADORES
+      </Typography>
+      {/* <Grid container spacing={2} sx={{ padding: theme.spacing(2, 0) }}> */}
+      <Stack direction={{ xs: "row" }} spacing={2}>
+        {partnersData.map(partner => (
+          <PartnerLogo
+            key={partner.image}
+            image={partner.image}
+            alt={partner.alt}
+            onClick={() => handleOnClick(partner.link)}
+          />
+        ))}
+      </Stack>
+    </Box>
+  )
+}
 
 export default Partners
