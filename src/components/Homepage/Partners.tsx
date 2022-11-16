@@ -17,7 +17,7 @@ const Partners = ({ partnersData }: PartnersProps) => {
   return (
     <Box sx={{ position: "relative" }}>
       <Typography
-        variant="h6"
+        variant="subtitle1"
         sx={{
           position: "absolute",
           top: '-2rem',
