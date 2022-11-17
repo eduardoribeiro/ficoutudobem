@@ -13,7 +13,8 @@ const theme = createTheme({
           background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
 
           */
-
+          position: 'relative',
+          overflow: 'hidden',
           background: 'linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%)',
           width: "100%",
           height: "100vh",

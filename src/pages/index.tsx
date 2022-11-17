@@ -8,6 +8,8 @@ import Seo from "../components/seo"
 import CanalQ from "../images/logo-q.svg"
 import theme from "../theme"
 import { Box, Typography } from "@mui/material"
+import Partners from "../components/Homepage/Partners"
+import { partners } from "../content/partners"
 
 type DataProps = {
   site: {
@@ -34,7 +36,7 @@ const Homepage: React.FC<PageProps<DataProps>> = ({ data, location }) => (
         style={{ margin: "0 auto", marginBottom: theme.spacing(2) }}
       />
       <Box
-        sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+        sx={{ display: "flex", alignItems: "center", justifyContent: "center", flexDirection: 'column' }}
       >
         <Typography
           variant="h4"
@@ -44,13 +46,16 @@ const Homepage: React.FC<PageProps<DataProps>> = ({ data, location }) => (
             textTransform: "uppercase",
           }}
         >
-          Estreia brevemente no
+          Estreia em breve
         </Typography>
         <CanalQ
-          width={148}
+          width={220}
           height="auto"
           style={{ marginTop: -2, marginLeft: 10 }}
         />
+      </Box>
+      <Box sx={{ xs: { display: 'block' }, sm: {display: 'none'} }}>
+        <Partners partnersData={partners} />
       </Box>
     </Box>
   </Layout>

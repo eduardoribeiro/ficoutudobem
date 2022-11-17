@@ -15,19 +15,17 @@ const Partners = ({ partnersData }: PartnersProps) => {
     link !== undefined && window.open(link)
   }
   return (
-    <Box sx={{ position: "relative" }}>
+    <Box
+      sx={{position: 'absolute', bottom: 100, display: 'block'}}
+    >
       <Typography
         variant="subtitle1"
-        sx={{
-          position: "absolute",
-          top: '-2rem',
-          display: "inline-block",
-        }}
+        sx={{ margin: theme.spacing(0, 0, 2, 0), display: 'inline-block' } }
       >
         PATROCINADORES
       </Typography>
       {/* <Grid container spacing={2} sx={{ padding: theme.spacing(2, 0) }}> */}
-      <Stack direction={{ xs: "row" }} spacing={2}>
+      <Stack direction={{ xs: "row" }} justifyContent="center" spacing={2}>
         {partnersData.map(partner => (
           <PartnerLogo
             key={partner.image}
