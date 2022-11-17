@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Prémios Áquila`,
-    description: `Site oficial dos Prémios Àquila 2023`,
+    title: `Ficou tudo bem`,
+    description: `Site oficial Ficou Tudo Bem`,
     author: `@eduardoribeiro`,
-    siteUrl: `https://www.premios-aquila.pt/`,
+    siteUrl: `https://www.ficoutudobem.pt/`,
   },
   plugins: [
     `gatsby-plugin-image`,

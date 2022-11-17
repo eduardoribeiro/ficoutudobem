@@ -20,7 +20,7 @@ const Footer: React.FC<any> = ({ children }) => (
         <Grid item>
           © {new Date().getFullYear()} &middot;
           {` `}
-          Tudo Vai Melhorar
+          Byron Produções
         </Grid>
         <Grid item>
           <Partners partnersData={partners} />

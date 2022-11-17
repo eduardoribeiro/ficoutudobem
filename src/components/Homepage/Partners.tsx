@@ -12,7 +12,7 @@ export interface PartnersProps {
 const Partners = ({ partnersData }: PartnersProps) => {
   const handleOnClick = (link: string | undefined) => {
     console.log(link)
-    window.open(link)
+    link !== undefined && window.open(link)
   }
   return (
     <Box sx={{ position: "relative" }}>
