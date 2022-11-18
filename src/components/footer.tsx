@@ -1,4 +1,5 @@
-import { Grid, styled } from "@mui/material"
+import { Grid, styled, Typography } from "@mui/material"
+import { Stack } from "@mui/system"
 import React from "react"
 import { partners } from "../content/partners"
 import Partners from "./Homepage/Partners"
@@ -20,14 +21,17 @@ const Footer: React.FC<any> = ({ children }) => (
         sx={{ justifyContent: "space-between", alignItems: "flex-end" }}
       >
         <Grid item>
-          © {new Date().getFullYear()} &middot;
-          {` `}
-          <img
-            src="./images/parceiros/byron.png"
-            height={22}
-            alt="Fénix - Associação Cinematográfica"
-            title="Fénix - Associação Cinematográfica"
-          />
+          <Stack direction="row" spacing={1}>
+            <Typography variant="body1">
+              © {new Date().getFullYear()} &middot;
+            </Typography>
+            <img
+              src="./images/parceiros/byron.png"
+              height={22}
+              alt="Fénix - Associação Cinematográfica"
+              title="Fénix - Associação Cinematográfica"
+            />
+          </Stack>
         </Grid>
         <Grid item></Grid>
       </Grid>
