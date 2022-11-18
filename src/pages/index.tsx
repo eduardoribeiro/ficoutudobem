@@ -61,7 +61,7 @@ const Homepage: React.FC<PageProps<DataProps>> = ({ data, location }) => (
   </Layout>
 )
 
-export const Head: HeadFC<DataProps> = () => <Seo title="Prémios Áquila" />
+export const Head: HeadFC<DataProps> = () => <Seo title="Ficou Tudo Bem" />
 
 export default Homepage
 
